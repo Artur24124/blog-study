@@ -1,0 +1,14 @@
+.controls {
+	display: flex;
+	grid-gap: 20px;
+}
+
+.button {
+	padding: 5px 15px;
+	background-color: #242424;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	outline: none;
+	cursor: pointer;
+}
