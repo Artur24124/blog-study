@@ -11,10 +11,10 @@ interface LangSwitcherProps {
 }
 
 export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
-	const { i18n } = useTranslation();
+	const { t, i18n } = useTranslation();
 	const { changeLanguage, language } = i18n;
 
-	const toggleLanguage = (): void => {
+	const toggleLanguage = async (): Promise<void> => {
 		changeLanguage(language === 'en' ? 'ru' : 'en');
 	};
 
@@ -23,7 +23,7 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
 			className={classNames(cls.langSwitcher, {}, [className])}
 			onClick={toggleLanguage}
 		>
-			{language.toUpperCase()}
+			{t('lang')}
 		</Button>
 	);
 };
