@@ -1,3 +1,5 @@
 {
-	"key": "Example"
+	"notFoundPage": "Page not found",
+	"unexpectedError": "An unexpected error occurred",
+	"reloadPage": "Reload page"
 }
