@@ -2,5 +2,9 @@
 	"notFoundPage": "Страница не найдена",
 	"unexpectedError": "Произошла непредвиденная ошибка",
 	"reloadPage": "Обновить страницу",
-	"lang": "RU"
+	"lang": "RU",
+	"menu": {
+		"main": "Главная",
+		"about": "О нас"
+	}
 }
