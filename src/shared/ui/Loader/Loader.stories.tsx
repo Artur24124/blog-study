@@ -4,15 +4,15 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook';
 import { Theme } from 'app/providers/ThemeProvider';
 
-import { Spinner } from './Spinner';
+import { Loader } from './Loader';
 
 export default {
-	title: 'shared/Spinner',
-	component: Spinner,
+	title: 'shared/Loader',
+	component: Loader,
 	args: {},
-} as ComponentMeta<typeof Spinner>;
+} as ComponentMeta<typeof Loader>;
 
-const Template: ComponentStory<typeof Spinner> = (args) => <Spinner {...args} />;
+const Template: ComponentStory<typeof Loader> = (args) => <Loader {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};

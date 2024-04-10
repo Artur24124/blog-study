@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import { classNames } from 'shared/lib';
-import { Spinner } from 'shared/ui';
+import { Loader } from 'shared/ui';
 
 import cls from './PageLoader.module.scss';
 
@@ -11,6 +11,6 @@ interface PageLoaderProps {
 
 export const PageLoader: FC<PageLoaderProps> = ({ className }) => (
 	<div className={classNames(cls.pageLoader, {}, [className])}>
-		<Spinner />
+		<Loader />
 	</div>
 );
