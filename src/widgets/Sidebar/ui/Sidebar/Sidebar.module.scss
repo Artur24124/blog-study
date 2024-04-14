@@ -9,14 +9,49 @@
 	transition: width var(--transition);
 }
 
-.collapsed {
-	width: var(--sidebar-width-collapdes);
+.menu {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 20px;
+	padding: 20px 0;
+}
+
+.menuLink {
+	display: flex;
+	align-items: center;
+	grid-gap: 10px;
+	height: 25px;
+}
+
+.menuText {
+	transition: opacity var(--transition), width var(--transition);
+}
+
+.menuIcon {
+	path {
+		fill: var(--inverted-primary-color);
+	}
 }
 
 .switchers {
 	display: flex;
 	flex-direction: column;
-	grid-gap: 20px;
+	grid-gap: 10px;
 	margin-top: auto;
 	padding-bottom: 20px;
+}
+
+.collapsed {
+	width: var(--sidebar-width-collapdes);
+
+	.menuText {
+		width: 0;
+		opacity: 0;
+	}
+}
+
+.collapsedBtn {
+	position: absolute;
+	right: -64px;
+	bottom: 64px;
 }

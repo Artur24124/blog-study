@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { classNames } from 'shared/lib';
-import { Button } from 'shared/ui';
+import { Button, ButtonTheme } from 'shared/ui/Button';
 
 import cls from './LangSwitcher.module.scss';
 
@@ -20,6 +20,7 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
 
 	return (
 		<Button
+			theme={ButtonTheme.BACKGROUND_INVERTED}
 			className={classNames(cls.langSwitcher, {}, [className])}
 			onClick={toggleLanguage}
 		>
