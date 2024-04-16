@@ -1,8 +1,9 @@
 {
 	"notFoundPage": "Страница не найдена",
-	"unexpectedError": "Произошла непредвиденная ошибка",
+	"unexpectedError": "Произошла непредвиденная ошиобка",
 	"reloadPage": "Обновить страницу",
 	"lang": "RU",
+	"login": "Войти",
 	"menu": {
 		"main": "Главная",
 		"about": "О нас"

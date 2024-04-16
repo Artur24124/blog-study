@@ -1,12 +1,12 @@
-import { FC, Suspense, useEffect } from 'react';
+import {
+	FC, Suspense,
+} from 'react';
 
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { classNames } from 'shared/lib';
-
-import './styles/index.scss';
 
 const App: FC = () => {
 	const { theme } = useTheme();
